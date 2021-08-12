@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* Responsive*/
+
+/* mobile responsive */
+@media screen and (max-width: 800px) {
+  .nav__links {
+    right: 0px;
+    top: 10vh;
+    position: absolute;
+    background-color: #f7bdbd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav > .nav__links {
+    width: 100%;
+    height: 50vh;
+    transform: translateY(-130%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav__links li {
+    opacity: 100;
+  }
+  nav > .burger {
+    display: block;
+    cursor: pointer;
+  }
+  nav > .nav-active {
+    transform: translateY(0%);
+  }
+  .container-one {
+    display: flex;
+  }
+  .container-one > .title {
+    color: #49463a;
+    font-size: 16px;
+  }
+  .container-one > .hero {
+    margin: 20px auto;
+    width: 320px;
+  }
+  .container-one > .title > p {
+    color: #49463a;
+    font-size: 16px;
+    margin: 20px;
+  }
+  .container-one > .title > button {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 300px;
+    margin: 20px;
+    margin-top: -90px;
+    background-color: #a35d5d;
+    color: white;
+  }
+  .box {
+    display: none;
+  }
+  .hero img {
+    display: none;
+  }
+
+  /* container two */
+  .container-two {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-two > .item-service {
+    width: 100%;
+  }
+  /* container three */
+
+  /* container four */
+  .container-four {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #about h2 {
+    text-align: center;
+  }
+  .container-four .about {
+    text-align: center;
+    width: 100%;
+  }
+  div.container.founder .founder .title > img h2 p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* container founder */
+  #about aside {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* burger togle */
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* main area */
+body {
+  background-color: #f5d6d6;
+}
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 5%;
+  min-height: 8vh;
+  background-color: #f7bdbd;
+}
+.nav__links {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+}
+.nav__links li {
+  list-style-type: none;
+}
+.nav__links a {
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #221d24;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+  color: #a35d5d;
+}
+.burger {
+  display: none;
+}
+.burger div {
+  width: 25px;
+  height: 5px;
+  background-color: #221d24;
+  margin: 3px;
+  transition: all 0.3s ease;
+}
+
+/* container one */
+
+.container-one {
+  display: flex;
+  justify-content: space-between;
+}
+.container-one > .title {
+  width: 100%;
+  height: 500px;
+  margin-left: 120px;
+}
+.container-one > .title > h1 {
+  color: #49463a;
+  font-size: 55px;
+  margin: 20px;
+}
+.container-one > .title > p {
+  color: #49463a;
+  font-size: 16px;
+  margin: 20px;
+  width: 60%;
+  text-align: left;
+}
+.container-one > .title > input {
+  padding: 10px;
+  border-radius: 20px;
+  width: 300px;
+  height: 6vh;
+  border: none;
+  color: #49463a;
+  margin: 20px;
+}
+button {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #a35d5d;
+  color: #ffe3e3;
+  margin: 20px;
+  width: 100px;
+  height: 6vh;
+  margin-left: -70px;
+}
+.container-one > .title > button:hover {
+  background-color: #bb8d8d;
+  color: #fff2f2;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.hero img {
+  width: 50%;
+  margin: 20px;
+  margin: 20px auto;
+}
+.box {
+  border: 1px solid #49463a;
+  width: 40%;
+  height: 80%;
+  margin-top: -400px;
+  margin-left: 80px;
+}
+
+/* container two */
+.container-two {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+div h2 {
+  color: #49463a;
+  font-size: 40px;
+  text-align: center;
+  margin: 10px auto;
+}
+.item-service img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-service {
+  width: 20%;
+  margin: 10px;
+}
+.item-service p {
+  text-align: center;
+  color: #49463a;
+}
+
+h3 {
+  text-align: center;
+  margin: 10px;
+  color: #3d3b32;
+}
+
+/* container three */
+
+.container-three {
+  display: flex;
+}
+#portfolio {
+  text-align: center;
+}
+.portfolio-title {
+  text-align: center;
+  margin: 20px auto;
+  color: #3d3b32;
+}
+.thumbnail img {
+  width: 30%;
+  margin: 20px auto;
+}
+
+/* container four */
+
+.container-four {
+  display: flex;
+}
+.title-about h2 {
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.about {
+  font-size: 18px;
+  text-align: left;
+  margin: 40px;
+  color: #a35d5d;
+  width: 60%;
+}
+
+/* container founder */
+.founder img {
+  width: 280px;
+}
+
+.title > p {
+  font-size: 16px;
+  text-align: center;
+  margin: 10px;
+  color: #a35d5d;
+}
+.title > h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* container five */
+.container-five {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  width: 350px;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.5px solid #e9b9b9;
+}
+.card:hover {
+  box-shadow: 2px 4px 5px #e9b9b9;
+  zoom: 101%;
+}
+
+.header-card img {
+  width: 100%;
+}
+.content-card h3 {
+  font-size: 18px;
+}
+.content-card > p {
+  margin: 10px;
+  color: #a35d5d;
+}
+.content-card .read {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.content-card .read:hover {
+  box-shadow: 2px 2px 2px #e9b9b9;
+}
+
+/* section */
+
+section {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  color: #a35d5d;
+}
+/* icon */
+.sosmed img {
+  width: 40px;
+  margin: 4px;
+  cursor: pointer;
+}
+li .instagram:hover {
+  background: url("../image/icon/instagram-hover.svg");
+  background-size: 40px;
+  display: hidden;
+}
+li .linkedin:hover {
+  background: url("../image/icon/linkedin-hover.svg");
+  background-size: 40px;
+}
+li .dribble:hover {
+  background: url("../image/icon/dribble-hover.svg");
+  background-size: 40px;
+}
+li img .dribble:hover {
+  display: none;
+}
+.sosmed {
+  display: flex;
+  justify-content: center;
+  margin: 120px;
+}
+.sosmed ul {
+  list-style: none;
+  display: flex;
+}
+footer {
+  text-align: center;
+  margin: 20px;
+  color: #3d3b32;
+}
