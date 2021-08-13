@@ -169,7 +169,6 @@ nav {
 .title {
   width: 100%;
   height: 530px;
-  margin-left: 120px;
 }
 .container-one > .title > h1 {
   color: #49463a;
@@ -277,9 +276,8 @@ h3 {
 .container-four {
   display: flex;
 }
-.title-about h2 {
+.title-about {
   text-align: left;
-  margin-left: 40px;
   margin-top: 20px;
 }
 
